@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -14,22 +15,13 @@ export default function Home() {
         Build real apps, work with real teams, and accidentally become a 10x
         developer!
       </h2>
-      <div className="flex gap-4 mb-4 p-14 ">
-        <a
-          href="/tutorial"
-          target="_blank"
-          className="bg-[rgb(166,166,240)] text-[#1a1a1a] font-bold py-3 px-6 shadow-[0_4px_12px_rgba(0,0,0,0.15)] hover:bg-[rgb(105,105,190)] transition-colors duration-300"
-        >
-          Stay on tutorial hell
-        </a>
-        <a
-          href="https://www.chingu.io"
-          target="_blank"
-          className="bg-[rgb(166,166,240)] text-[#1a1a1a] font-bold py-3 px-6 shadow-[0_4px_12px_rgba(0,0,0,0.15)] hover:bg-[rgb(105,105,190)] transition-colors duration-300"
-        >
-          Join a Voyage with Chingu
-        </a>
-      </div>
+
+      <Link
+        href="https://www.chingu.io"
+        className="bg-[rgb(166,166,240)] text-[#1a1a1a] font-bold py-3 px-6 shadow-[0_4px_12px_rgba(0,0,0,0.15)] hover:bg-[rgb(105,105,190)] transition-colors duration-300"
+      >
+        Join a Voyage with Chingu
+      </Link>
     </main>
   );
 }
