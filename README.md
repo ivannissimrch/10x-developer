@@ -1,1 +1,1 @@
-##Just a little x10 meme
+# 10x-developer
